@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahernhiet to Celsius Convertor</title>
+    <style>
+        .con1 {
+            font-size: 38px;
+            ;
+            display: inline-block;
+            color:#fff;
+
+        }
+
+        .con2 {
+            display: inline-block;
+            height: 20px;
+            width: 50px;
+            mix-blend-mode: multiply;
+            margin-top: 20px;
+            object-fit: cover;
+            padding: 20px;
+
+        }
+
+        .con3 {
+            display: inline-block;
+            align-items: center;
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 2%;
+        }
+
+        .box {
+            border: 3px solid rgb(217, 83, 83);
+            align-items: center;
+            margin-top: 10%;
+            padding: 30px;
+            width:fit-content;
+            background: #303030;
+
+
+        }
+
+        .h1 {
+            color: #fff;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .C1 {
+            background-color: #622f2f;
+            color: rgb(244, 253, 253);
+        }
+        #i1{
+            border-radius: 4px;
+            padding: 3px;
+            width: 80%;
+        }
+        #i2{
+            border-radius: 4px;
+            padding: 3px;
+            width: 80%;
+        }
+        
+    </style>
+</head>
+
+<body style="background: rgb(74, 38, 38);">
+    <center>
+        <div class="box">
+            <h1 class="h1">Temperature Converter</h1>
+            <div class="con1">Farhenhiet <br> <input id="i1" type="number" placeholder="Fahernhiet" oninput="fartocel()"></div>
+            <img class="con2"
+                src="https://imgs.search.brave.com/54JPh1V2Kjze14808QPvtKhdNI5HVNkUsnelmn0S6UQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3BuZy1kb3Vi/bGUtYXJyb3dzLWZp/bGUtZG91YmxlLWFy/cm93LXN2Zy0xMjgw/LnBuZw">
+            <div class="con3">Celsius <br> <input id="i2" type="number" placeholder="Celsius" oninput="celtofar()"></div><br>
+            <input type="button" class="C1" value="Clear">
+        </div>
+    </center>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
